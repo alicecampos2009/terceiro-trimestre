@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade da Calculadora de Troco</title>
+      <style>
+         button {
+            padding: 20px;
+            background-color: rgb(205, 144, 155);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        h1 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Atividade da Calculadora de Troco</h1>
+    <button onclick="inicio()">Começe aqui</button>
+
+    <script>
+        function inicio() {
+            let produto = window.prompt ('Nome do produto');
+            let preço = window.prompt ('Qual foi o preço?');
+            let dinheiro = window.prompt ('Quanto você entregou');
+            let troco = dinheiro - preço;
+            alert (" Você comprou " + produto + " que custa R$ " + preço + "." + "Deu R$" + dinheiro + "e vai receber R$" + troco + "de troco!")
+        }
+    </script>
+</body>
+</html>

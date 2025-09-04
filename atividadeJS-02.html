@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade de Boas-Vindas</title>
+    <style>
+         button {
+            padding: 20px;
+            background-color: rgb(205, 144, 155);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        h1 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, seja bem-vindo ao nosso site!</h1>
+    <button onclick="inicio()">Começe aqui!</button>
+
+    <script>
+        function inicio() {
+            let nome = window.prompt('Digite aqui o seu nome')
+
+            let idade = window.prompt(`Bem vindo (a), ${nome}! Qual a sua idade?`)
+            window.alert(`Que maravilha, ${nome}! Você tem ${idade} anos!`)
+            }
+    </script>
+</body>
+</html>
