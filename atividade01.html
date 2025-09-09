@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 01: Saudação</title>
+    <style>
+        button {
+            padding: 20px;
+            background-color: rgb(205, 144, 155);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        h1 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Atividade 01: Saudação</h1>
+    <button onclick="inicio()">Começe aqui!</button>
+    <section id="resposta">
+        <p> </p>
+    </section>
+
+    <script>
+        function inicio() {
+            let nome = window.prompt ('Qual é o seu nome?');
+            let solucao = document.getElementById('resposta');
+            solucao.innerHTML = `<p>Olá, ${nome}! Seja bem-vindo(a) ao nosso site.</p>`;
+        }
+    </script>
+</body>
+</html>
