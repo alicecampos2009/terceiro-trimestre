@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 01 - Converter distância</title>
+    <style>
+        button {
+            padding: 20px;
+            background-color: rgb(205, 144, 155);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        h1 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Converter distância</h1>
+    <button onclick="inicio()">Conveter distância</button>
+    <section id="resposta">
+        <p> </p>
+    </section>
+
+    <script>
+        function inicio() {
+            let número = Number(prompt('Digite sua distância em metros'));
+
+            let quilômetro = número / 1000;
+            let hectômetro = número / 100;
+            let decâmetro = número / 10;
+            let decímetro = número * 10;
+            let centímetro = número * 100;
+            let milímetro = número * 1000;
+
+            let resultado = document.getElementById('resposta');
+            resposta.innerHTML =
+                `<ul>
+                <li>Em Quilômetro é ${quilômetro}!</li>
+                <li>Em Hectômetro é ${hectômetro}!</li>
+                <li>Em Decâmetro é ${decâmetro}!</li>
+                <li>Em Decímetro é ${decímetro}!</li>
+                <li>Em Centímetro é ${centímetro}!</li>
+                <li>Em Milímetro é ${milímetro}!</li>
+                </ul>`
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter Kelvin (K) e Fahrenheit (°F)</title>
+    <style>
+        button {
+            padding: 20px;
+            background-color: rgb(205, 144, 155);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        h1 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: rgb(205, 144, 155);">Convertor de Temperatura</h1>
+    <button onclick="clique()">Converter</button>
+
+    <script>
+        function clique() {
+            let numero = Number(prompt('Digite a temperatura em Celsius!'));
+            let Kelvin = numero + 273.15 ;
+            let Fahrenheit =  (numero * 9/5)  + 32  
+            window.alert(`Em Kelvin  é ${Kelvin}!  Em  Fahrenheit  é ${ Fahrenheit }! `)
+        }
+    </script>
+</body>
+</html>
